@@ -32,3 +32,29 @@ setInterval(function ()
   textNode.data = text;
 }, 100);
 }
+
+
+/***  problem 72 */
+
+function checkElement(nums){
+    var end = nums.length -1;
+    if (nums.length >= 1){
+        return nums[0] == nums[end];
+    }else{return false;}
+}
+
+console.log(checkElement([1,2,1]));
+
+/***  is String */
+
+function isString(input){
+    console.log(typeof(input));
+    if(typeof(input) == "string" ){
+        
+        return true;
+    }else{
+        return false;
+    }
+}
+
+alert(isString([1,2,3]));
